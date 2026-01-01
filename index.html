@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>LogicFlow</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="logo.svg" alt="Logo" style="width: 50px; height: 50px;">
+            <div style="color: white; font-weight: bold; margin-top: 5px;">LogicFlow</div>
+        </div>
+        <div class="menu-scroll">
+            
+            <div class="menu-category">الأساسيات وتمثيل البيانات</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('num_systems')">أنظمة العد</li>
+                <li onclick="loadTopic('conversions')">التحويل بين الأنظمة</li>
+                <li onclick="loadTopic('binary_math')">العمليات الحسابية</li>
+            </ul>
+
+            <div class="menu-category">الجبر البولياني</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('bool_basics')">المتغيرات البوليانية</li>
+                <li onclick="loadTopic('bool_laws')">القوانين والنظريات</li>
+            </ul>
+
+            <div class="menu-category">الدوائر المنطقية</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('basic_gates')">البوابات الأساسية</li>
+                <li onclick="loadTopic('universal_gates')">البوابات الشاملة</li>
+            </ul>
+
+            <div class="menu-category">تصميم الدوائر (K-Map)</div>
+                <ul class="menu-list">
+                    <li onclick="loadTopic('canonical_forms')">الصيغ القياسية</li>
+                    <li onclick="loadTopic('kmap_basics')">خرائط كارنوف (2-4 متغيرات)</li>
+                    <li onclick="loadTopic('kmap_advanced')">خرائط 5 متغيرات وتبسيط</li>
+                </ul>
+
+            <div class="menu-category">الدوائر التوافقية</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('adders')">الجامع (Adder)</li>
+                <li onclick="loadTopic('decoders')">المفكك (Decoder)</li>
+                <li onclick="loadTopic('multiplexers')">الناخب (Multiplexer)</li>
+            </ul>
+
+            <div class="menu-category">الذاكرة (Sequential)</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('flip_flops')">القلابات (Flip-Flops)</li>
+                <li onclick="loadTopic('registers')">المسجلات (Registers)</li>
+                <li onclick="loadTopic('counters')">العدادات (Counters)</li>
+            </ul>
+
+            <div class="menu-category">الذاكرة المتقدمة</div>
+                <ul class="menu-list">
+                    <li onclick="loadTopic('memory_basics')">مقدمة RAM/ROM</li>
+                    <li onclick="loadTopic('ram_operation')">مختبر الذاكرة (RAM Lab)</li>
+                </ul>
+
+                <div class="menu-category" style="color:#e74c3c;">الاختبار والشهادة</div>
+                    <ul class="menu-list">
+                        <li onclick="loadTopic('final_exam')">🎓 الاختبار النهائي</li>
+                    </ul>
+        </div>
+
+        <div class="menu-category" style="color:#8e44ad;">🛠️ المختبر العملي</div>
+            <ul class="menu-list">
+                <li onclick="loadTopic('playground')">المحاكي</li>
+            </ul>
+
+        <div class="developer-signature">
+        <div class="dev-label">Designed & Developed by</div>
+        <div class="dev-name">Aymen N. Hamad</div>
+        <div class="dev-year">© 2026</div>
+    </div>
+    </nav>
+
+    <main class="content-area" id="main-content">
+        </main>
+
+    <script>window.topicsData = {};</script> 
+    
+    <script src="js/main.js"></script>
+
+    <script src="js/chapter1.js"></script>
+    <script src="js/chapter2.js"></script>
+    <script src="js/chapter3.js"></script>
+    <script src="js/chapter4.js"></script>
+    <script src="js/chapter5.js"></script>
+    <script src="js/chapter6.js"></script>
+    <script src="js/chapter7.js"></script>
+    <script src="js/exam.js"></script>
+    <script src="js/playground.js"></script>
+
+</body>
+</html>

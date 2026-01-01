@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="32" fill="#34495e"/>
+
+    <g transform="translate(14, 14) scale(0.8)">
+        <path d="M10 10 V35 H35" stroke="#3498db" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <circle cx="10" cy="10" r="7" fill="#ecf0f1" stroke="#3498db" stroke-width="3"/>
+        <circle cx="10" cy="35" r="7" fill="#ecf0f1" stroke="#3498db" stroke-width="3"/>
+        <circle cx="35" cy="35" r="8" fill="#f1c40f" stroke="#f39c12" stroke-width="2">
+             <animate attributeName="r" values="8;9;8" dur="1.5s" repeatCount="indefinite" />
+        </circle>
+    </g>
+</svg>
